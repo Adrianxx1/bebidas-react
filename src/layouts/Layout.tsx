@@ -1,14 +1,13 @@
-import { Outlet } from "react-router-dom"
-import Header from "../components/Header"
-export default function Layaout(){
+import { Outlet } from "react-router-dom";
+import Header from "../components/Header";
 
-    return (
-        <>
-       <Header/>
-       <main className='container mx-auto py-16'>
-        <Outlet/>
-        </main>
-        </>
-    )
-
+export default function Layout() {
+  return (
+    <>
+    <Header />
+    <main className="container mx-auto py-16">
+        <Outlet />
+    </main>
+    </>
+  )
 }
