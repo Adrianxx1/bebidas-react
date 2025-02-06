@@ -5,9 +5,8 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend:
-    {
-      backgroundImage : {
+    extend: {
+      backgroundImage: {
         "header": "url('/bg.jpg')"
       }
     },
