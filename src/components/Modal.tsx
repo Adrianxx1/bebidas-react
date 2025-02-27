@@ -91,8 +91,7 @@ export default function Modal() {
                     </button>
                     <button
                       type="button"
-                      className="w-full p-3 uppercase rounded
-                      bg-primary hover:bg-green-800 transition-colors"
+                  className="w-full p-3 uppercase rounded bg-green-400 hover:bg-green-800 transition-colors text-white font-bold"
                       onClick={() => {
                         addFavorites(selectedRecipe);
                         closeModal();

@@ -23,7 +23,7 @@ export default function HomePage(){
                 </div>
                 </>
             ): (
-                <p className="my-10 text-center text-2xl">No hay bebidas, busca con el formulario</p>
+                <p className="my-10 text-center text-2xl">Aun no haz buscado, explora nuestras recetas con tu ingediente favorito.</p>
             )
         }
         </>

@@ -30,7 +30,7 @@ export const createFavoritesSlice: StateCreator<
         ],
       });
       createNotificationSlice(set, get, api).showNotification({
-        text: "Receta eliminada de favoritos",
+        text: "Oh, parece que ya no te gusto :(",
         error: true,
       });
     } else {
@@ -38,7 +38,7 @@ export const createFavoritesSlice: StateCreator<
         favorites: [...get().favorites, recipe],
       });
       createNotificationSlice(set, get, api).showNotification({
-        text: "Se agregó a favoritos",
+        text: "Genial, probemos esta nueva :)",
         error: false,
       });
     }
