@@ -3,21 +3,22 @@ import Header from "../components/Header";
 import Modal from "../components/Modal";
 import { useAppStore } from "../stores/useAppStore";
 import { useEffect } from "react";
+import Notification from "../components/Notifications";
 
 export default function Layout() {
-
-  const loadFavorites = useAppStore(state => state.loadFavorites)
+  const loadFavorites = useAppStore((state) => state.loadFavorites);
   useEffect(() => {
-    loadFavorites()
-  })
-
+    loadFavorites();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
-    <Header />
-    <main className="container mx-auto py-16">
+      <Header />
+      <main className="container mx-auto py-16 bg-white">
         <Outlet />
-    </main>
-    <Modal />
+      </main>
+      <Modal />
+      <Notification />
     </>
-  )
+  );
 }
